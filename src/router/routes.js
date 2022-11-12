@@ -1,11 +1,14 @@
+
 export default [
     {
         path: '/home',
         component: () => import('@/pages/Home'),
+        meta: { isShow: true }  // footer组件是否显示
     },
     {
         path: '/search',
         component: () => import('@/pages/Search'),
+        meta: { isShow: true }
     },
     {
         path: '/login',
