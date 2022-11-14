@@ -1,4 +1,3 @@
-
 export default [
     {
         path: '/home',
@@ -6,7 +5,8 @@ export default [
         meta: { isShow: true }  // footer组件是否显示
     },
     {
-        path: '/search',
+        name: 'search',
+        path: '/search:keyWord?',
         component: () => import('@/pages/Search'),
         meta: { isShow: true }
     },

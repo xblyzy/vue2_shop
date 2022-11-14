@@ -17,12 +17,12 @@ requests.interceptors.request.use((config) => {
     return config;
 })
 
-requests.interceptors.response.use((response) => {
+requests.interceptors.response.use((res) => {
     nProgress.done();
-    return response.data;
-}, (err) => {
+    return res.data;
+}, (error) => {
     nProgress.done();
-    return Promise.reject(new Error(err));
+    return Promise.reject(new Error(error));
 })
 
 export default requests;

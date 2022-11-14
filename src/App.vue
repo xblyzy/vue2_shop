@@ -15,8 +15,13 @@ export default {
     Header,
     Footer,
   },
+  mounted() {
+    // 请求三级联动数据
+    this.$store.dispatch('home/getCategoryList');
+  }
 };
 </script>
 
 <style>
+
 </style>

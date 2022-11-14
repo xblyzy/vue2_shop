@@ -1,5 +1,7 @@
 <template>
-  <div>search</div>
+  <div>
+    <TypeNav></TypeNav>
+  </div>
 </template>
 
 <script>
