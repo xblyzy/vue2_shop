@@ -54,6 +54,7 @@ export default {
     // 点击搜索按钮
     goSearch() {
       let location = { name: "search", params: { keyWord: this.keyWord || undefined } };
+      // 是否点击三级目录存在query参数
       if (this.$route.query) {
         location.query = this.$route.query;
       }
